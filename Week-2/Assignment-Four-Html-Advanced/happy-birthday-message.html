@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy birthday message creator</title>
+
+    <style>
+      .form-group {
+        display: flex;
+        gap: 2em;
+        max-width: 500px;
+        margin-bottom: 1em;
+        justify-content: start;
+      }
+
+      label {
+        flex: 1;
+      }
+
+      input {
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy birthday message creator</h1>
+
+    <form method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="message">Message?</label>
+        <input
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Happy birthday!"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address?</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0- 9-]+)*"
+          placeholder="name@domain.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date to send?</label>
+        <input type="date" name="date" id="date" />
+      </div>
+
+      <div class="form-group">
+        <label for="color">Message Color?</label>
+        <input type="color" name="color" id="color" />
+      </div>
+
+      <div class="form-group">
+        <label for="number">Number of blinks?</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          value="0"
+          min="0"
+          max="20"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="range">Number of blinks?</label>
+        <input
+          type="range"
+          name="range"
+          id="range"
+          value="20"
+          min="0"
+          max="50"
+        />
+      </div>
+
+      <div>
+        <button type="submit">Send Birthday Message</button>
+      </div>
+    </form>
+  </body>
+</html>
