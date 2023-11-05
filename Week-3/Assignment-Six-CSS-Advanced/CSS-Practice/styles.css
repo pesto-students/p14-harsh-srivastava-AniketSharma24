@@ -1,0 +1,46 @@
+div {
+  width: 600px;
+  height: 280px;
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 16pt;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  font-style: italic;
+}
+
+a {
+  font-size: 12px;
+}
+
+p:nth-child(1) {
+  background-color: yellow;
+  float: left;
+  width: 200px;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+p:nth-child(3) {
+  background-color: orange;
+  position: absolute;
+  width: 200px;
+  padding: 10px;
+  left: 110px;
+  top: 200px;
+}
+
+p:nth-child(4) {
+  background-color: rgb(255, 80, 0);
+  color: white;
+  float: right;
+  width: 200px;
+  padding: 10px;
+  margin: 20px 40px 0 0;
+}
+
+/* Add styles here */
