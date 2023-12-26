@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Object</title>
+  </head>
+  <body>
+    <script>
+      function displayWindowProperties() {
+        console.log(navigator.userAgent);
+        console.log(screen.width, screen.height);
+        console.log(location.href, location.pathname);
+
+        // Below code will set author key in sessionStorage and filename in localStorage
+        sessionStorage.setItem("author", "John Doe");
+        localStorage.setItem("fileName", "index.html");
+
+        console.log(
+          sessionStorage.getItem("author"),
+          localStorage.getItem("fileName")
+        );
+      }
+
+      displayWindowProperties();
+    </script>
+  </body>
+</html>
